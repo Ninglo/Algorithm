@@ -19,3 +19,6 @@ class LinkList:
 
 ## 课程结构
 
+1. [简单的辅助函数](part1.md)
+2. [简单题](part2.md)
+3. [DummyNode](part3.md)
