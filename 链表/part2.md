@@ -31,18 +31,18 @@ def reversePrint(head):
 
 ```Python
 def getKthFromEnd(head, k):
-        def getLinkLength(head):
-            length = 0
-            while head:
-                head = head.next
-                length += 1
-            return length
-        
-        length = getLinkLength(head)
-        for i in range(length-k):
+    def getLinkLength(head):
+        length = 0
+        while head:
             head = head.next
+            length += 1
+        return length
+    
+    length = getLinkLength(head)
+    for i in range(length-k):
+        head = head.next
 
-        return head
+    return head
 ```
 
 ### 环形链表

@@ -44,7 +44,8 @@ def buildTree(preorder, inorder):
             # 开启左子树递归
             node.right = recur(i - left + root + 1, i + 1, right)
             # 开启右子树递归
-            return node                                           # 回溯返回根节点
+            return node         
+            # 回溯返回根节点
 
         dic, preorder = {}, preorder
         for i in range(len(inorder)):
